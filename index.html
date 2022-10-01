@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./app.js" defer></script>
+    <title>Rock, Paper, Scissors The Game</title>
+  </head>
+  <body>
+    <div id="card">
+      <h1>Rock, Paper, Scissors</h1>
+      <h2>Select your answer</h2>
+
+      <div id="message"></div>
+
+      <form>
+        <label>
+          <input type="radio" name="choice" id="rock-btn" />
+          <img src="./imgs/rock.gif" loop="infinite" class="option" />
+        </label>
+        <label>
+          <input type="radio" name="choice" id="paper-btn" />
+          <img src="./imgs/paper.gif" loop="infinite" class="option" />
+        </label>
+        <label>
+          <input type="radio" name="choice" id="scissors-btn" />
+          <img src="./imgs/scissors.gif" loop="infinite" class="option" />
+        </label>
+      </form>
+
+      <button type="button" id="play-btn">PLAY</button>
+
+      <br /><button type="button" id="play-again">Play Again</button>
+    </div>
+  </body>
+</html>

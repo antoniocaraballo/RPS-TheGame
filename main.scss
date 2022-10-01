@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #181818;
+  font-family: "Poppins", sans-serif;
+  // outline: 1px solid red;
+}
+
+// Colors
+$primary: #33cccc;
+
+body {
+  background: #333333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  gap: 15px;
+  margin: 40px 0px;
+}
+
+label {
+  position: relative;
+  border-radius: 8px;
+
+  &:hover {
+    outline: 2px solid $primary;
+  }
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+
+  &:checked + .option {
+    border: 4px solid $primary;
+  }
+}
+
+.option {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  transition: background ease 0.2s;
+}
+
+#play-again {
+  display: none;
+}
+
+button {
+  padding: 8px 40px;
+  background: $primary;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: auto;
+
+  &:hover {
+    background: rgba($color: $primary, $alpha: 0.8);
+    cursor: pointer;
+  }
+}
+
+h2 {
+  font-weight: 400;
+}
+
+#card {
+  background: #ffffff;
+  width: 90%;
+  max-width: fit-content;
+  padding: 40px 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+// Message
+
+#message {
+  margin: 40px 0px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  justify-content: space-around;
+  display: none;
+
+  img {
+    width: 50px;
+  }
+}
